@@ -1,0 +1,19 @@
+PASOS: 
+
+Paso 1.- Instalación de herramientas : 
+- Navegador web instalado (Chrome o Firefox)
+- Editor de codigo instalado : Visual Studio Code
+- tener servidor web instalado y todo lo que conlleva : XAMPP ( tengo la version PHP 8.2.4 )
+- tener gestor de base de datos instalado : MySQL Workbench (tengo la versión 8.0.34 )
+- instalar extensión en visual studio code : PHP server
+
+Paso 2.- Las rutas (puertos) de XAMPP con MySQL Workbench deben coincidir.
+
+Paso 3.- Ejecutar SCRIPT en MySQL Workbench 
+
+Paso 4.- Abrir el index.html, botón derecho hacer click PHP server: Serve project( extensión instalada en visual)
+
+Paso 5.- Completar formulario y a la vez revisar las validaciones en inspeccion de página.
+
+
+

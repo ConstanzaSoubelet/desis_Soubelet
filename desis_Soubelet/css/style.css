@@ -1,0 +1,43 @@
+
+.nombre{
+    width: 157px;
+    margin: 5px 80px;
+}
+
+.alias{
+    width: 157px;
+    margin: 5px 170px;
+}
+
+.rut{
+    width: 157px;
+    margin: 5px 172px;
+}
+
+.email{
+    width: 157px;
+    margin: 5px 166px;
+}  
+
+.region{
+    width: 164px;
+    margin: 5px 158px;
+}
+
+.comuna{
+    width: 164px;
+    margin: 5px 150px;
+}
+
+
+.candidato{
+    margin: 5px 136px;
+}
+
+.checkbox {
+    margin: 5px 2px 10px 20px;
+}
+
+.boton{
+    margin: 10px 0px;
+}

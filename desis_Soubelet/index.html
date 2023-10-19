@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Votación</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <fieldset>
+    <h1>FORMULARIO DE VOTACIÓN</h1>
+    <form action="conexion.php" method="post" onsubmit="return validarFormulario();">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" class="nombre" required><br>
+
+        <label for="alias">Alias</label>
+        <input type="text" id="alias" name="alias" class="alias" minlength="6" pattern="^[A-Za-z0-9]+$" required><br>
+
+        <label for="rut">RUT</label>
+        <input type="text" id="rut" name="rut" class="rut" oninput="validaRut(this)" required><br>        
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="email" required><br>
+
+        <label>Región</label>
+        <select id="region" name="region" class="region">
+            <option value="0">Selecciona una opcion</option>
+            <option value="1">Tarapacá</option>
+            <option value="2">Bio-bío</option>
+        </select>
+        <br>
+        <div id="comuna"></div>
+
+        <label for="candidato">Candidato</label>
+        <select name="candidato" class="candidato" required>
+            <option value="">Selecciona un candidato</option>
+            <option value="1">Rock Británico</option> <!-- Cambia el value al ID del candidato -->
+            <option value="2">Rock Americano</option> <!-- Cambia el value al ID del candidato -->
+        </select><br>
+
+        <label>Como se enteró de Nosotros</label>
+        <input type="checkbox" name="seleccion[]" class="checkbox" value="Web">Web
+        <input type="checkbox" name="seleccion[]" value="TV">TV
+        <input type="checkbox" name="seleccion[]" value="Redes Sociales">Redes Sociales
+        <input type="checkbox" name="seleccion[]" value="Amigo">Amigo<br>
+
+        <input type="submit" value="Votar" class="boton">
+    </form>
+</fieldset>
+
+
+<!-- Incluye la biblioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="./js/validarFormulario.js"></script>
+</body>
+
+</html>
